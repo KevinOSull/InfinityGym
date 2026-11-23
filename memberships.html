@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>Memberships</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="css/styles.css"/>
 		<link rel="stylesheet" href="css/memberships.css"/>
 		<script src="js/memberships.js" defer></script>
@@ -21,7 +22,96 @@
 			</nav>
 		</header>
 		<main>
-		
+			<section class="intro">
+				 <h1>Choose Your Membership</h1>
+				 <p>Find the Membership that suits your lifestyle and your fitness goals</p>
+			</section>
+			<section class="container membership-plans">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="membership-card">
+							<h2>Basic</h2>
+							<p class="cost">€35<span>/ month</span></p>
+							<ul>
+								<li>Regular Gym Access</li>
+								<li>Standard Gym Equipment Use</li>
+							</ul>
+							<a href="booking.html">Join Now</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="membership-card">
+							<h2>Premium</h2>
+							<p class="cost">€50<span>/ month</span></p>
+							<ul>
+								<li>Regular Gym Access</li>
+								<li>Fitness Classes</li>
+							</ul>
+							<a href="booking.html">Join Now</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="membership-card">
+							<h2>Pro</h2>
+							<p class="cost">€75<span>/ month</span></p>
+							<ul>
+								<li>Regular Gym Access</li>
+								<li>Fitness Classes</li>
+								<li>Leisure Centre Access</li>
+							</ul>
+							<a href="booking.html">Join Now</a>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<section class="membership-calculator">
+				<h2>Calculate Your Membership</h2>
+				<p>Please choose your desired membership plan to get started</p>
+				<label for="membership">Select Membership: </label> <!-- code reference: https://www.w3schools.com/tags/tag_option.asp-->
+				<select id="membership" onchange="calculateTotal()">
+					<option value="35">Basic - €35/month</option>
+					<option value="50">Premium - €50/month</option>
+					<option value="75">Pro - €75/month</option>
+				</select>
+				<h3>Optional Extras</h3>
+				<label>
+					<input type="checkbox" id="personalTraining" value="100" onchange="calculateTotal()"> <!-- code reference: https://www.w3schools.com/tags/att_input_type_checkbox.asp and https://www.w3schools.com/jsref/event_onchange.asp -->
+					Personal Training (+€100/month)
+				</label>
+				<label>
+					<input type="checkbox" id="nutritionPlan" value="20" onchange="calculateTotal()">
+					Nutrition plan (+€20/month)
+				</label>
+				<label>
+					<input type="checkbox" id="guestPass" value="10" onchange="calculateTotal()">
+					Guest Pass (+€10/month)
+				</label>
+				<div class="total-cost">
+					<h3>Your Monthly Total:</h3>
+					<p id="totalCost">€35</p>
+				</div>
+			</section>
 		</main>
 	</body>
+	<footer class="gym-footer">
+		<div class="footer-content">
+			<div class="footer-section">
+				<h3>Infinity Gym</h3>
+				<p>Your fitness journery begins here</p>
+			</div>
+			<div class="footer-section">
+				<h3>Contact Us</h3>
+				<p>Email: info@infinitygym.ie</p>
+				<p>Phone: 087 123 4567</p>
+			</div>
+			<div class="footer-section">
+				<h3>Opening Hours</h3>
+				<p>Monday - Friday: 6am to 11pm</p>
+				<p>Saturday and Sunday: 8am to 8pm</p>
+			</div>
+		</div>
+		<div class="footer-bottom"> <!-- code reference: https://www.w3schools.com/html/html_entities.asp -->
+			<p>&copy; 2026 Infinity Gym . All rights reserved.</p>
+		</div>
+	</footer>
 </html>
