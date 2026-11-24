@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/booking.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <script src="js/booking.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Join</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="css/booking.css"/>
+		<script src="js/booking.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+				<img src="Images/logo.png" alt="Infinity Gym Logo" class="logo"/> <!-- Logo generated using ChatGPT -->
+			</a>
+			<nav class="banner">
+				<a href="index.html">Home</a>
+				<a href="classes.html">Classes</a>
+				<a href="memberships.html">Membership</a>
+				<a href="booking.html">Contact</a>
+			</nav>
+		</header>
+		<main>
+			<section class="intro">
+				<h1>Join Infinity Gym</h1>
+				<p>Take your first steps towards acheiving your fitness goals. Start your fitness journey with Infnity Gym today.</p>
+			</section>
+			<section class="join-form">
+				<div class="container">
+					<h2>Become a Member</h2>
+					<p class="form-intro">Please complete the form below and our team will be in touch.</p>
+					<form id="joinForm">
+						<h3>Personal Details</h3>
+						<div class="form-group">
+							<label for="firstName">First Name:</label>
+							<input type="text" class="form-control" id="firstName" name="firstName" required> <!-- code reference: https://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+						</div>
+						<div class="form-group">
+							<label for="lastName">Last Name;</label>
+							<input type="text" class="form-control" id="lastName" name="lastName" required>
+						</div>
+						<div class="form-group">
+							<label for"email">Email Address:</label>
+							<input type="email" class="form-control" id="email" name="email" required>
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone Number:</label>
+							<input type="tel" class="form-control" id="phone" name="phone" required>
+						</div>
+					</form>
+				</div>
+		</main>
+		<footer class="gym-footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>Infinity Gym</h3>
+					<p>Your fitness journey begins here</p>
+				</div>
+				<div class="footer-section">
+					<h3>Contact Us</h3>
+					<p>Email: info@infinitygym.ie</p>
+					<p>Phone: 087 123 4567</p>
+				</div>
+				<div class="footer-section">
+					<h3>Opening Hours</h3>
+					<p>Monday - Friday: 6am to 11pm</p>
+					<p>Saturday and Sunday: 8am to 8pm</p>
+				</div>
+			</div>
+			<div class="footer-bottom"> <!-- code reference: https://www.w3schools.com/html/html_entities.asp -->
+				<p>&copy; 2026 Infinity Gym. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
 </html>
