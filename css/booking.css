@@ -18,8 +18,16 @@
 	padding: 40px 20px;
 	background-color: white;
 }
+.join-form .form-group{
+	margin-bottom: 20px;
+}
 .join-form .container{
 	max-width: 800px;
+}
+.join-form form{
+	background-color: #F4F4F4;
+	padding: 30px;
+	border-radius: 8px;
 }
 .join-form h2{
 	text-align: center;
@@ -48,21 +56,13 @@
 	padding: 10px;
 	height: auto;
 	font-size: 1.4rem;
+	background-color: white;
+	box-shadow: none;
 }
-.join-form .btn-success{
-	background-color: #174B38;
+.join-form .form-control:focus{ /* code reference: https://www.w3schools.com/bootstrap/bootstrap_forms.asp?utm_source=chatgpt.com */
 	border-color: #174B38;
-	padding: 10px 25px;
-	font-size: 1.5rem;
-	margin-top: 15px;
-}
-.join-form .btn-success:hover{
-	background-color: #328568;
-	border-color: #328568;
-}
-.join-form .checkbox{
-	margin-top: 10px;
-	margin-bottom: 10px;
+	outline: none;
+	box-shadow: 0 0 5px rgba(23, 75, 56, 0.3);
 }
 .join-form .btn-success{
 	background-color: #174B38;
@@ -72,7 +72,28 @@
 	margin-top: 15px;
 	border-radius: 5px;
 }
-@media(max-width:767px){
+.join-form .btn-success:hover{
+	background-color: #328568;
+	border-color: #328568;
+}
+.join-form .checkbox{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.join-form .checkbox label{
+	font-size: 1.4rem;
+	font-weight: normal;
+	color: #333333;
+}
+.join-form .btn-success{
+	background-color: #174B38;
+	border-color: #174B38;
+	padding: 12px 30px;
+	font-size: 1.5rem;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+@media(max-width:767px){ /* code reference: https://www.w3schools.com/bootstrap/bootstrap_ref_css_helpers.asp */
 	.intro h1{
 		font-size: 2rem;
 	}
@@ -81,6 +102,9 @@
 	}
 	.join-form{
 		padding: 25px 10px;
+	}
+	.join-form form{
+		padding: 20px 15px;
 	}
 	.join-form h2{
 		font-size: 2rem;
