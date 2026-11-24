@@ -4,13 +4,90 @@
 	background-color: #F4F4F4;
 	color: #174B38;
 }
-.join-intro h1{
+.intro h1{
 	font-size: 2.5rem;
 	margin-bottom: 15px;
 }
-.join-intro p{
+.intro p{
 	font-size: 1.6rem;
 	max-width: 700px;
 	margin: 0 auto;
 	line-height: 1.6;
 }
+.join-form{
+	padding: 40px 20px;
+	background-color: white;
+}
+.join-form .container{
+	max-width: 800px;
+}
+.join-form h2{
+	text-align: center;
+	color: #174B38;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+.form-intro{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+}
+.join-form h3{
+	color: #174B38;
+	font-size: 1.8rem;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.join-form label{
+	color: #333333;
+	font-weight: normal;
+}
+.join-form .form-control{
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	padding: 10px;
+	height: auto;
+	font-size: 1.4rem;
+}
+.join-form .btn-success{
+	background-color: #174B38;
+	border-color: #174B38;
+	padding: 10px 25px;
+	font-size: 1.5rem;
+	margin-top: 15px;
+}
+.join-form .btn-success:hover{
+	background-color: #328568;
+	border-color: #328568;
+}
+.join-form .checkbox{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.join-form .btn-success{
+	background-color: #174B38;
+	border-color: #174B38;
+	padding: 12px 30px;
+	font-size: 1.5rem;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+@media(max-width:767px){
+	.intro h1{
+		font-size: 2rem;
+	}
+	.intro p{
+		font-size: 1.3rem;
+	}
+	.join-form{
+		padding: 25px 10px;
+	}
+	.join-form h2{
+		font-size: 2rem;
+	}
+	.form-intro{
+		font-size: 1.3rem;
+	}
+}
+	
+	
