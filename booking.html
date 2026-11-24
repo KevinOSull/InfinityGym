@@ -48,6 +48,41 @@
 							<label for="phone">Phone Number:</label>
 							<input type="tel" class="form-control" id="phone" name="phone" required>
 						</div>
+						<h3>Choose your Membership</h3>
+						<div class="form-group">
+							<label for="membership">Membership Plan:</label>
+							<select class="form-control" id="membership" name="membership" required>
+								<option value="">Please select a membership</option>
+								<option value="Basic">Basic - €35/month</option>
+								<option value="Premium">Premium - €50/month</option>
+								<option value="Pro">Pro - €75/month</option>
+							</select>
+						</div>
+						<h3>Optional Extras</h3>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="extras" value="Personal Training">
+								Personal Training (+€100/month)
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="extras" value="Nutrition Plan">
+								Nutrition Plan (+€20/month)
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="extras" value="Guest Pass">
+								Guest Pass (+€10/month)
+							</label>
+						</div>	
+						<h3>Additional Information</h3>
+						<div class="form-group">
+							<label for="message">Additional Information (Optional):</label>
+							<textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us more about your fitness goals or questions you may have."></textarea>
+						</div>
+						<button type="submit" class="btn btn-success">Submit Enquiry</button> <!-- code reference: https://www.w3schools.com/bootstrap/bootstrap_buttons.asp -->
 					</form>
 				</div>
 		</main>
