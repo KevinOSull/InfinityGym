@@ -24,7 +24,7 @@
 		<main>
 			<section class="intro">
 				<h1>Join Infinity Gym</h1>
-				<p>Take your first steps towards acheiving your fitness goals. Start your fitness journey with Infnity Gym today.</p>
+				<p>Take your first steps towards acheiving your fitness goals. Start your fitness journey with Infinity Gym today.</p>
 			</section>
 			<section class="join-form">
 				<div class="container">
@@ -32,21 +32,31 @@
 					<p class="form-intro">Please complete the form below and our team will be in touch.</p>
 					<form id="joinForm">
 						<h3>Personal Details</h3>
-						<div class="form-group">
-							<label for="firstName">First Name:</label>
-							<input type="text" class="form-control" id="firstName" name="firstName" required> <!-- code reference: https://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
-						</div>
-						<div class="form-group">
-							<label for="lastName">Last Name;</label>
-							<input type="text" class="form-control" id="lastName" name="lastName" required>
-						</div>
-						<div class="form-group">
-							<label for"email">Email Address:</label>
-							<input type="email" class="form-control" id="email" name="email" required>
-						</div>
-						<div class="form-group">
-							<label for="phone">Phone Number:</label>
-							<input type="tel" class="form-control" id="phone" name="phone" required>
+						<div class="row">  <!-- code reference: https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp -->
+							<div class="col-xs-12 col-sm-6"> <!-- code reference: https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp -->
+								<div class="form-group">
+									<label for="firstName">First Name:</label>
+									<input type="text" class="form-control" id="firstName" name="firstName" required> <!-- code reference: https://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="form-group">
+									<label for="lastName">Last Name:</label>
+									<input type="text" class="form-control" id="lastName" name="lastName" required>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="form-group">
+									<label for="email">Email Address:</label>
+									<input type="email" class="form-control" id="email" name="email" required>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="form-group">
+									<label for="phone">Phone Number:</label>
+									<input type="tel" class="form-control" id="phone" name="phone" required>
+								</div>
+							</div>
 						</div>
 						<h3>Choose your Membership</h3>
 						<div class="form-group">
@@ -85,6 +95,7 @@
 						<button type="submit" class="btn btn-success">Submit Enquiry</button> <!-- code reference: https://www.w3schools.com/bootstrap/bootstrap_buttons.asp -->
 					</form>
 				</div>
+			</section>
 		</main>
 		<footer class="gym-footer">
 			<div class="footer-content">
