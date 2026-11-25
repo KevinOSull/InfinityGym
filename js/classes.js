@@ -2,6 +2,26 @@ console.log("script loaded")
 
 const cardElements = document.querySelectorAll('.cards');
 const favouriteElement = document.querySelectorAll('.favourite-icon')
+const filterButtons = document.querySelectorAll('.filter-btn')
+
+
+function filterCards(){
+    for(let i = 0; i < filterButtons.length; i++){
+        filterButtons[i].addEventListener('click',function(){
+        let btn = filterButtons[i].getAttribute("data-filter")
+
+        for(let i = 0; i < cardElements.length; i++){
+        let cata = cardElements[i].getAttribute("data-category")
+            if(cata === btn || btn === null){
+                cardElements[i].style.display = "block"
+            }else{
+                cardElements[i].style.display = "none"
+            }
+        }
+    });
+    
+    }
+}
 
 function favoriteCard(){
     for(let i = 0; i < favouriteElement.length; i++){
@@ -26,4 +46,5 @@ function attachHoverEffectToCards(){
 if(cardElements.length > 0){
     attachHoverEffectToCards();
     favoriteCard();
+    filterCards();
 }

@@ -21,12 +21,29 @@
 				<a href="booking.html">Contact</a>
 			</nav>
 	</header>
+	<section class="intro-section">
+			<h1>Find your Class</h1>
+			<p>Browse our range of fitness classes. Select a category below to find to find the workout that suit you.</p>
+	</section>
+
+	<section class="filter-section">
+		<h2>All Classes</h2>
+		<div id="button-containers">
+			<button class="filter-btn" type="button">Show all</button>
+			<button class="filter-btn" data-filter="Strength" type="button">Strength</button>
+			<button class="filter-btn" data-filter="Cardio" type="button">Cardio</button>
+			<button class="filter-btn" data-filter="HIIT" type="button">HIIT</button>
+			<button class="filter-btn" data-filter="Flexibility" type="button">Flexibility</button>
+			<button class="filter-btn" data-filter="Dance" type="button">Dance</button>
+		</div>
+	</section>
+	
 	<div class="outer-container">
-		<div class="cards">
+		<div class="cards" data-category="Flexibility">
 			<div class="card-images">
 				<img src="Images/yoga-class.jpg" alt="Yoga Class"/>
 			</div>
-			<div class="card-content">
+			<div class="card-content" >
 				<h2>Yoga</h2>
 				<p><strong>Category:</strong> Mind & Body</p>
 				<p><strong>Duration:</strong> 45 minutes</p>
@@ -39,7 +56,7 @@
 		</div>
 
 
-		<div class="cards">
+		<div class="cards" data-category="Flexibility">
 			<div class="card-images">
 				<img src="Images/pilates.jpg" alt="Pilates Class"/>
 			</div>
@@ -55,9 +72,9 @@
 		</div>
 
 
-		<div class="cards">
+		<div class="cards" data-category="Flexibility">
 			<div class="card-images">
-				<img src="Images/stretchandmobility.jpg" alt="Yoga Class"/>
+				<img src="Images/stretchandmobility.jpg" alt="Stretch and Mobility"/>
 			</div>
 			<div class="card-content">
 				<h2>Stretch and Mobility</h2>
@@ -71,9 +88,9 @@
 		</div>
 
 
-		<div class="cards">
+		<div class="cards" data-category="Flexibility">
 			<div class="card-images">
-				<img src="Images/mediation.jpg" alt="Yoga Class"/>
+				<img src="Images/mediation.jpg" alt="Mediation"/>
 			</div>
 			<div class="card-content">
 				
@@ -87,7 +104,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Flexibility">
 			<div class="card-images">
 				<img src="Images/flexibility.jpg" alt="Yoga Class"/>
 			</div>
@@ -103,7 +120,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="HIIT">
 			<div class="card-images">
 				<img src="Images/hiit-training (1).jpg" alt="Yoga Class"/>
 			</div>
@@ -118,7 +135,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Cardio">
 			<div class="card-images">
 				<img src="Images/spinningclass.jpg" alt="Yoga Class"/>
 			</div>
@@ -133,7 +150,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Cardio">
 			<div class="card-images">
 				<img src="Images/boxercise (1).jpg" alt="Yoga Class"/>
 			</div>
@@ -149,7 +166,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Dance">
 			<div class="card-images">
 				<img src="Images/zumba.jpg" alt="Yoga Class"/>
 			</div>
@@ -164,7 +181,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="HIIT">
 			<div class="card-images">
 				<img src="Images/circuittraining.jpg" alt="Yoga Class"/>
 			</div>
@@ -179,7 +196,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Strength">
 			<div class="card-images">
 				<img src="Images/weighttraining.jpg" alt="Yoga Class"/>
 			</div>
@@ -194,7 +211,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Strength">
 			<div class="card-images">
 				<img src="Images/bodypump.jpg" alt="Yoga Class"/>
 			</div>
@@ -209,7 +226,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Strength">
 			<div class="card-images">
 				<img src="Images/kettlebelltraining.jpg" alt="Yoga Class"/>
 			</div>
@@ -224,7 +241,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Strength">
 			<div class="card-images">
 				<img src="Images/dumbellss.jpg" alt="Yoga Class"/>
 			</div>
@@ -239,7 +256,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Strength">
 			<div class="card-images">
 				<img src="Images/core.jpg" alt="Yoga Class"/>
 			</div>
@@ -254,7 +271,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="HIIT">
 			<div class="card-images">
 				<img src="Images/bootcamp.jpg" alt="Yoga Class"/>
 			</div>
@@ -269,7 +286,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="Strength">
 			<div class="card-images">
 				<img src="Images/trxtraining.jpg" alt="Yoga Class"/>
 			</div>
@@ -284,7 +301,7 @@
 			</div>
 		</div>
 
-		<div class="cards">
+		<div class="cards" data-category="HIIT">
 			<div class="card-images">
 				<img src="Images/crosstraining.jpg" alt="Yoga Class"/>
 			</div>
@@ -298,7 +315,7 @@
 				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
 		</div>
 
-		</div><div class="cards">
+		</div><div class="cards" data-category="Dance">
 			<div class="card-images">
 				<img src="Images/DANCEFITNESS.jpg" alt="Yoga Class"/>
 			</div>
@@ -312,7 +329,7 @@
 				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
 		</div>
 
-		</div><div class="cards">
+		</div><div class="cards" data-category="Strength">
 			<div class="card-images">
 				<img src="Images/abstraining.jpg" alt="Yoga Class"/>
 			</div>
@@ -352,5 +369,6 @@
 		</div>
 	</footer>
     <script src="js/classes.js"></script>
+	
 </body>
 </html>
