@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    /> -->
+    //Disabled for now as it is stopping the image carousel from displaying
+    properly. Will troubleshoot
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
@@ -42,8 +47,102 @@
     </div>
     <div id="aboutUs">
       <h3>About Us</h3>
-      <p>Description of gym</p>
-      <p>Image carousel of equipment</p>
+      <p>
+        Our gym is designed by fitness enthusiasts for fitness enthusiasts. No
+        matter where you are on your fitness journey you will be welcomed here
+      </p>
+      <br />
+      With top of the range equipment and plenty of it there will be no long
+      wait times or changes in workout plans due to broken equipment.
+      <br />
+      <br />
+      Have a look at some of our equipment below!
+      <br />
+      <br />
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img
+            src="./Images/gym.jpg"
+            alt="A wide shot of a gym floor with equipment"
+            style="width: 100%"
+          />
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img
+            src="./Images/dumbells.jpg"
+            alt="An image dumbell rack"
+            style="width: 100%"
+          />
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img
+            src="./Images/machines1.jpg"
+            alt="A variety of gym machine equipment"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img
+            src="./Images/machines2.jpg"
+            alt="A variety of gym machine equipment"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img
+            src="./Images/machines3.jpg"
+            alt="A variety of gym machine equipment"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img
+            src="./Images/medicineball.jpg"
+            alt="A rack of kettlebells and medicine balls"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
+        </div>
+        <!-- 
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./Images/machines1.jpg" style="width: 100%" />
+          <div class="text">Caption Three</div>
+        </div> -->
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
     </div>
     <div id="ourClasses">
       <h3>Our Classes</h3>
@@ -53,7 +152,7 @@
       <div class="footer-content">
         <div class="footer-section">
           <h3>Infinity Gym</h3>
-          <p>Your fitness journery begins here</p>
+          <p>Your fitness journey begins here</p>
         </div>
         <div class="footer-section">
           <h3>Contact Us</h3>
