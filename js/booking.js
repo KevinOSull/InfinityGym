@@ -5,11 +5,13 @@ const lastNameInput = document.getElementById("lastName");
 const emailInput = document.getElementById("email");
 const phoneInput = document.getElementById("phone");
 const membershipInput = document.getElementById("membership");
+const messageInput = document.getElementById("message");
 const firstNameError = document.getElementById("firstNameError");
 const lastNameError = document.getElementById("lastNameError");
 const emailError = document.getElementById("emailError");
 const phoneError = document.getElementById("phoneError");
 const membershipError = document.getElementById("membershipError");
+const messageError = document.getElementById("messageError");
 const form = document.getElementById("joinForm");
 const result = document.getElementById("result");
 
@@ -30,6 +32,10 @@ function validateFirstName(){
 		showError(firstNameError, "Please enter your first name.");
 		return false;
 	}
+	if (value.length > 30){
+		showError(firstNameError, "First name cannot exceed 30 characters.");
+		return false;
+	}
 	clearError(firstNameError);
 	return true;
 }
@@ -41,6 +47,10 @@ function validateLastName(){
 		showError(lastNameError, "Please enter your last name.");
 		return false;
 	}
+		if (value.length > 30){
+		showError(lastNameError, "Last name cannot exceed 30 characters.");
+		return false;
+	}
 	clearError(lastNameError);
 	return true;
 }
@@ -48,6 +58,14 @@ function validateLastName(){
 //validate email
 function validateEmail(){
 	let value = emailInput.value.trim();
+	if(value.length < 6){
+		showError(emailError, "Email must be at least 6 characters.");
+		return false;
+	}
+	if(value.length > 100){
+		showError(emailError, "Email cannot exceed 100 characters.");
+		return false;
+	}
 	if(!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))){
 		showError(emailError, "Enter a valid email address.");
 		return false;
@@ -59,7 +77,15 @@ function validateEmail(){
 //validate phone
 function validatePhone(){
 	let value = phoneInput.value.trim();
-	if(!(/^\+?[0-9 ]{7,15}$/.test(value))){
+	if(value.length < 7){
+		showError(phoneError, "Phone number must be at least 7 characters.");
+		return false;
+	}
+	if(value.length > 20){
+		showError(phoneError, "Phone number cannot exceed 20 characters.");
+		return false;
+	}
+	if(!(/^\+?[0-9 ]{7,20}$/.test(value))){
 		showError(phoneError, "Enter a valid phone number.");
 		return false;
 	}
@@ -77,6 +103,17 @@ function validateMembership(){
 	return true;
 }
 
+//validate messge
+function validateMessage(){
+	let value = messageInput.value;
+	if(value.length > 500){
+		showError(messageError, "Your message cannot exceed 500 characters.");
+		return false;
+	}
+	clearError(messageError);
+	return true;
+}
+
 //validate form
 function validateForm(){
 	let okFirstName = validateFirstName();
@@ -84,7 +121,8 @@ function validateForm(){
 	let okEmail = validateEmail();
 	let okPhone = validatePhone();
 	let okMembership = validateMembership();
-	return okFirstName && okLastName && okEmail && okPhone && okMembership;
+	let okMessage = validateMessage();
+	return okFirstName && okLastName && okEmail && okPhone && okMembership && okMessage;
 }
 
 //prevent reloading
