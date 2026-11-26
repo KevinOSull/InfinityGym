@@ -1,374 +1,556 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/classes.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/classes.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-			<a href="index.html">
-				<img src="Images/logo.png" alt="Infinity Gym Logo" class="logo"/> <!-- Logo generated using ChatGPT -->
-			</a>
-			<nav class="banner">
-				<a href="index.html">Home</a>
-				<a href="classes.html">Classes</a>
-				<a href="memberships.html">Membership</a>
-				<a href="booking.html">Contact</a>
-			</nav>
-	</header>
-	<section class="intro-section">
-			<h1>Find your Class</h1>
-			<p>Browse our range of fitness classes. Select a category below to find to find the workout that suit you.</p>
-	</section>
+      <a href="index.html">
+        <img src="Images/logo.png" alt="Infinity Gym Logo" class="logo" />
+        <!-- Logo generated using ChatGPT -->
+      </a>
+      <nav class="banner">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="memberships.html">Membership</a>
+        <a href="booking.html">Contact</a>
+      </nav>
+    </header>
+    <section class="intro-section">
+      <h1>Find your Class</h1>
+      <p>
+        Browse our range of fitness classes. Select a category below to find to
+        find the workout that suit you.
+      </p>
+    </section>
 
-	<section class="filter-section">
-		<h2>All Classes</h2>
-		<div id="button-containers">
-			<button class="filter-btn" type="button">Show all</button>
-			<button class="filter-btn" data-filter="Strength" type="button">Strength</button>
-			<button class="filter-btn" data-filter="Cardio" type="button">Cardio</button>
-			<button class="filter-btn" data-filter="HIIT" type="button">HIIT</button>
-			<button class="filter-btn" data-filter="Flexibility" type="button">Flexibility</button>
-			<button class="filter-btn" data-filter="Dance" type="button">Dance</button>
-		</div>
-	</section>
-	
-	<div class="outer-container">
-		<div class="cards" data-category="Flexibility">
-			<div class="card-images">
-				<img src="Images/yoga-class.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content" >
-				<h2>Yoga</h2>
-				<p><strong>Category:</strong> Mind & Body</p>
-				<p><strong>Duration:</strong> 45 minutes</p>
-				<p><strong>Intensity:</strong> Low–Moderate</p>
-				<p>Improve flexibility, balance and strength through a series of flowing poses and controlled breathing.</p>
-				<p><strong>Price:</strong> €10</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-				
-			</div>
-		</div>
+    <section class="filter-section">
+      <h2>All Classes</h2>
+      <div id="button-containers">
+        <button class="filter-btn" type="button">Show all</button>
+        <button class="filter-btn" data-filter="Strength" type="button">
+          Strength
+        </button>
+        <button class="filter-btn" data-filter="Cardio" type="button">
+          Cardio
+        </button>
+        <button class="filter-btn" data-filter="HIIT" type="button">
+          HIIT
+        </button>
+        <button class="filter-btn" data-filter="Flexibility" type="button">
+          Flexibility
+        </button>
+        <button class="filter-btn" data-filter="Dance" type="button">
+          Dance
+        </button>
+      </div>
+    </section>
 
+    <div class="outer-container">
+      <div class="cards" data-category="Flexibility">
+        <div class="card-images">
+          <img
+            src="Images/yoga-class.jpg"
+            alt="People participating in a yoga Class"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Yoga</h2>
+          <p><strong>Category:</strong> Mind & Body</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> Low–Moderate</p>
+          <p>
+            Improve flexibility, balance and strength through a series of
+            flowing poses and controlled breathing.
+          </p>
+          <p><strong>Price:</strong> €10</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Flexibility">
-			<div class="card-images">
-				<img src="Images/pilates.jpg" alt="Pilates Class"/>
-			</div>
-			<div class="card-content">
-				<h2>Pilates</h2>
-				<p><strong>Category:</strong>Mind and Body</p>
-				<p><strong>Duration:</strong>45 Minutes </p>
-				<p><strong>Intensity:</strong>Moderate </p>
-				<p>Strengthen your core, improve posture and develop better body control through controlled movements.</p>
-				<p><strong>Price:</strong>€12 </p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Flexibility">
+        <div class="card-images">
+          <img src="Images/pilates.jpg" alt="A Pilates Class" />
+        </div>
+        <div class="card-content">
+          <h2>Pilates</h2>
+          <p><strong>Category:</strong>Mind and Body</p>
+          <p><strong>Duration:</strong>45 Minutes</p>
+          <p><strong>Intensity:</strong>Moderate</p>
+          <p>
+            Strengthen your core, improve posture and develop better body
+            control through controlled movements.
+          </p>
+          <p><strong>Price:</strong>€12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
+      <div class="cards" data-category="Flexibility">
+        <div class="card-images">
+          <img
+            src="Images/stretchandmobility.jpg"
+            alt="Two people doing stretching exercises"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Stretch and Mobility</h2>
+          <p><strong>Category:</strong>Mind and Body</p>
+          <p><strong>Duration:</strong>30 Minutes</p>
+          <p><strong>Intensity:</strong>Low</p>
+          <p>
+            Improve your range of motion and reduce muscle stiffness with guided
+            stretches and mobility exercises.
+          </p>
+          <p><strong>Price:</strong> €8</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Flexibility">
-			<div class="card-images">
-				<img src="Images/stretchandmobility.jpg" alt="Stretch and Mobility"/>
-			</div>
-			<div class="card-content">
-				<h2>Stretch and Mobility</h2>
-				<p><strong>Category:</strong>Mind and Body</p>
-				<p><strong>Duration:</strong>30 Minutes </p>
-				<p><strong>Intensity:</strong>Low </p>
-				<p>Improve your range of motion and reduce muscle stiffness with guided stretches and mobility exercises.</p>
-				<p><strong>Price:</strong> €8</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Flexibility">
+        <div class="card-images">
+          <img src="Images/mediation.jpg" alt="People mediating in a group" />
+        </div>
+        <div class="card-content">
+          <h2>Mediation</h2>
+          <p><strong>Category:</strong>Mind and Body</p>
+          <p><strong>Duration:</strong>30 Minutes</p>
+          <p><strong>Intensity:</strong> Low</p>
+          <p>
+            Relax your mind, reduce stress and improve focus through breathing
+            exercises and mindfulness.
+          </p>
+          <p><strong>Price</strong> €8</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
+      <div class="cards" data-category="Flexibility">
+        <div class="card-images">
+          <img
+            src="Images/flexibility.jpg"
+            alt="A person stretching their leg over their head"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Flexibility training</h2>
+          <p><strong>Category:</strong>Mind and Body</p>
+          <p><strong>Duration:</strong>30 Minutes</p>
+          <p><strong>Intensity:</strong>Low</p>
+          <p>
+            Develop greater flexibility and improve movement through targeted
+            stretching exercises.
+          </p>
+          <p><strong>Price:</strong> €8</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Flexibility">
-			<div class="card-images">
-				<img src="Images/mediation.jpg" alt="Mediation"/>
-			</div>
-			<div class="card-content">
-				
-				 <h2>Mediation</h2>
-				<p><strong>Category:</strong>Mind and Body</p>
-				<p><strong>Duration:</strong>30 Minutes </p>
-				<p><strong>Intensity:</strong> Low</p>
-				<p>Relax your mind, reduce stress and improve focus through breathing exercises and mindfulness.</p>
-				<p><strong>Price</strong> €8</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="HIIT">
+        <div class="card-images">
+          <img
+            src="Images/HIIT_training.jpg"
+            alt="A man training with battle ropes"
+          />
+        </div>
+        <div class="card-content">
+          <h2>HIIT Training</h2>
+          <p><strong>Category:</strong>Cardio</p>
+          <p><strong>Duration:</strong>30 Minutes</p>
+          <p><strong>Intensity:</strong> High</p>
+          <p>
+            Burn calories and improve cardiovascular fitness with short bursts
+            of intense exercise followed by recovery periods.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Flexibility">
-			<div class="card-images">
-				<img src="Images/flexibility.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				
-				<h2>Flexibility training</h2>
-				<p><strong>Category:</strong>Mind and Body</p>
-				<p><strong>Duration:</strong>30 Minutes </p>
-				<p><strong>Intensity:</strong>Low </p>
-				<p>Develop greater flexibility and improve movement through targeted stretching exercises.</p>
-				<p><strong>Price:</strong> €8</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Cardio">
+        <div class="card-images">
+          <img
+            src="Images/spinningclass.jpg"
+            alt="Spinning bikes with gym equipment in background"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Spinning</h2>
+          <p><strong>Category:</strong> Cardio</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> Moderate–High</p>
+          <p>
+            Build endurance and improve fitness with an energetic indoor cycling
+            session set to motivating music.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="HIIT">
-			<div class="card-images">
-				<img src="Images/hiit-training (1).jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				<h2>HIIT Training</h2>
-				<p><strong>Category:</strong>Cardio</p>
-				<p><strong>Duration:</strong>30 Minutes </p>
-				<p><strong>Intensity:</strong> High</p>
-				<p>Burn calories and improve cardiovascular fitness with short bursts of intense exercise followed by recovery periods.</p>
-				<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Cardio">
+        <div class="card-images">
+          <img
+            src="Images/boxercise (1).jpg"
+            alt="A person training with a punching bag"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Boxercise</h2>
+          <p><strong>Category:</strong> Cardio</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> High</p>
+          <p>
+            Improve fitness, coordination and stamina through boxing-inspired
+            combinations and conditioning exercises.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Cardio">
-			<div class="card-images">
-				<img src="Images/spinningclass.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				 <h2>Spinning</h2>
-				 <p><strong>Category:</strong> Cardio</p>
-				 <p><strong>Duration:</strong> 45 minutes</p>
-				 <p><strong>Intensity:</strong> Moderate–High</p>
-				 <p>Build endurance and improve fitness with an energetic indoor cycling session set to motivating music.</p>
-				 <p><strong>Price:</strong> €12</p>
-				 <p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Dance">
+        <div class="card-images">
+          <img
+            src="Images/zumba.jpg"
+            alt="People participating in a dance fitness class"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Zumba</h2>
+          <p><strong>Category:</strong> Dance Fitness</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> Moderate–High</p>
+          <p>
+            Enjoy a fun, energetic workout combining dance movements with upbeat
+            music to improve fitness.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Cardio">
-			<div class="card-images">
-				<img src="Images/boxercise (1).jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				<h2>Boxercise</h2>
-				<p><strong>Category:</strong> Cardio</p>
-				<p><strong>Duration:</strong> 45 minutes</p>
-				<p><strong>Intensity:</strong> High</p>
-				<p>Improve fitness, coordination and stamina through boxing-inspired combinations and conditioning exercises.</p>
-				<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-					 
-			</div>
-		</div>
+      <div class="cards" data-category="HIIT">
+        <div class="card-images">
+          <img
+            src="Images/circuittraining.jpg"
+            alt="A man performing a tyre flip exercise"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Circuit Training</h2>
+          <p><strong>Category:</strong> Full Body</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> High</p>
+          <p>
+            Move between different exercise stations to build strength,
+            endurance and overall fitness.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Dance">
-			<div class="card-images">
-				<img src="Images/zumba.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				<h2>Zumba</h2>
-        		<p><strong>Category:</strong> Dance Fitness</p>
-        		<p><strong>Duration:</strong> 45 minutes</p>
-        		<p><strong>Intensity:</strong> Moderate–High</p>
-        		<p>Enjoy a fun, energetic workout combining dance movements with upbeat music to improve fitness.</p>
-       			<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Strength">
+        <div class="card-images">
+          <img src="Images/weighttraining.jpg" alt="A man holding a barbell" />
+        </div>
+        <div class="card-content">
+          <h2>Weight Training</h2>
+          <p><strong>Category:</strong> Strength</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> Moderate–High</p>
+          <p>
+            Build muscle and develop strength using a combination of free
+            weights and resistance exercises.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="HIIT">
-			<div class="card-images">
-				<img src="Images/circuittraining.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				<h2>Circuit Training</h2>
-        		<p><strong>Category:</strong> Full Body</p>
-				<p><strong>Duration:</strong> 45 minutes</p>
-				<p><strong>Intensity:</strong> High</p>
-				<p>Move between different exercise stations to build strength, endurance and overall fitness.</p>
-				<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Strength">
+        <div class="card-images">
+          <img
+            src="Images/bodypump.jpg"
+            alt="People taking part in a group strength class"
+          />
+        </div>
+        <div class="card-content">
+          <h2>BodyPump</h2>
+          <p><strong>Category:</strong> Strength</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> Moderate–High</p>
+          <p>
+            A full-body strength workout using barbells, weights and high
+            repetitions to challenge major muscle groups.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Strength">
-			<div class="card-images">
-				<img src="Images/weighttraining.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				 <h2>Weight Training</h2>
-				<p><strong>Category:</strong> Strength</p>
-				<p><strong>Duration:</strong> 45 minutes</p>
-				<p><strong>Intensity:</strong> Moderate–High</p>
-				<p>Build muscle and develop strength using a combination of free weights and resistance exercises.</p>
-				<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Strength">
+        <div class="card-images">
+          <img
+            src="Images/kettlebelltraining.jpg"
+            alt="A man performing a kettlebell workout"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Kettlebell Training</h2>
+          <p><strong>Category:</strong> Strength</p>
+          <p><strong>Duration:</strong> 30 minutes</p>
+          <p><strong>Intensity:</strong> High</p>
+          <p>
+            Develop strength, balance and coordination using dynamic kettlebell
+            exercises.
+          </p>
+          <p><strong>Price:</strong> €10</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Strength">
-			<div class="card-images">
-				<img src="Images/bodypump.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				<h2>BodyPump</h2>
-				<p><strong>Category:</strong> Strength</p>
-				<p><strong>Duration:</strong> 45 minutes</p>
-				<p><strong>Intensity:</strong> Moderate–High</p>
-				<p>A full-body strength workout using barbells, weights and high repetitions to challenge major muscle groups.</p>
-				<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Strength">
+        <div class="card-images">
+          <img
+            src="Images/dumbellss.jpg"
+            alt="A woman performing dumbell exercises with a trainer"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Dumbbell Training</h2>
+          <p><strong>Category:</strong> Strength</p>
+          <p><strong>Duration:</strong> 30 minutes</p>
+          <p><strong>Intensity:</strong> Moderate</p>
+          <p>
+            Improve muscular strength and stability through a variety of
+            dumbbell-based exercises.
+          </p>
+          <p><strong>Price:</strong> €10</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Strength">
-			<div class="card-images">
-				<img src="Images/kettlebelltraining.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				 <h2>Kettlebell Training</h2>
-				<p><strong>Category:</strong> Strength</p>
-				<p><strong>Duration:</strong> 30 minutes</p>
-				<p><strong>Intensity:</strong> High</p>
-				<p>Develop strength, balance and coordination using dynamic kettlebell exercises.</p>
-				<p><strong>Price:</strong> €10</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Strength">
+        <div class="card-images">
+          <img
+            src="Images/core.jpg"
+            alt="A person performing a plank exercise"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Core Training</h2>
+          <p><strong>Category:</strong> Strength</p>
+          <p><strong>Duration:</strong> 30 minutes</p>
+          <p><strong>Intensity:</strong> Moderate</p>
+          <p>
+            Strengthen your abdominal and lower back muscles with exercises
+            designed to improve stability and posture.
+          </p>
+          <p><strong>Price:</strong> €10</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Strength">
-			<div class="card-images">
-				<img src="Images/dumbellss.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				 <h2>Dumbbell Training</h2>
-				<p><strong>Category:</strong> Strength</p>
-				<p><strong>Duration:</strong> 30 minutes</p>
-				<p><strong>Intensity:</strong> Moderate</p>
-				<p>Improve muscular strength and stability through a variety of dumbbell-based exercises.</p>
-				<p><strong>Price:</strong> €10</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="HIIT">
+        <div class="card-images">
+          <img
+            src="Images/bootcamp.jpg"
+            alt="A man performing exercise with a medicine ball"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Boot Camp</h2>
+          <p><strong>Category:</strong> Full Body</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> High</p>
+          <p>
+            Challenge yourself with a combination of strength, cardio and
+            endurance exercises in a group environment.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="Strength">
-			<div class="card-images">
-				<img src="Images/core.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				<h2>Core Training</h2>
-				<p><strong>Category:</strong> Strength</p>
-				<p><strong>Duration:</strong> 30 minutes</p>
-				<p><strong>Intensity:</strong> Moderate</p>
-				<p>Strengthen your abdominal and lower back muscles with exercises designed to improve stability and posture.</p>
-				<p><strong>Price:</strong> €10</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
+      <div class="cards" data-category="Strength">
+        <div class="card-images">
+          <img
+            src="Images/trxtraining.jpg"
+            alt="A man performing body rows using TRX straps"
+          />
+        </div>
+        <div class="card-content">
+          <h2>TRX Training</h2>
+          <p><strong>Category:</strong> Strength</p>
+          <p><strong>Duration:</strong> 30 minutes</p>
+          <p><strong>Intensity:</strong> Moderate–High</p>
+          <p>
+            Use suspension straps and bodyweight exercises to develop strength,
+            balance and core stability.
+          </p>
+          <p><strong>Price:</strong> €10</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
 
-		<div class="cards" data-category="HIIT">
-			<div class="card-images">
-				<img src="Images/bootcamp.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				<h2>Boot Camp</h2>
-				<p><strong>Category:</strong> Full Body</p>
-				<p><strong>Duration:</strong> 45 minutes</p>
-				<p><strong>Intensity:</strong> High</p>
-				<p>Challenge yourself with a combination of strength, cardio and endurance exercises in a group environment.</p>
-				<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
-
-		<div class="cards" data-category="Strength">
-			<div class="card-images">
-				<img src="Images/trxtraining.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				 <h2>TRX Training</h2>
-				<p><strong>Category:</strong> Strength</p>
-				<p><strong>Duration:</strong> 30 minutes</p>
-				<p><strong>Intensity:</strong> Moderate–High</p>
-				<p>Use suspension straps and bodyweight exercises to develop strength, balance and core stability.</p>
-				<p><strong>Price:</strong> €10</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
-
-		<div class="cards" data-category="HIIT">
-			<div class="card-images">
-				<img src="Images/crosstraining.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				 <h2>Cross Training</h2>
-				<p><strong>Category:</strong> Full Body</p>
-				<p><strong>Duration:</strong> 45 minutes</p>
-				<p><strong>Intensity:</strong> High</p>
-				<p>Combine different training styles to improve overall strength, endurance and athletic performance.</p>
-				<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-		</div>
-
-		</div><div class="cards" data-category="Dance">
-			<div class="card-images">
-				<img src="Images/DANCEFITNESS.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				<h2>Dance Fitness</h2>
-				<p><strong>Category:</strong> Dance Fitness</p>
-				<p><strong>Duration:</strong> 45 minutes</p>
-				<p><strong>Intensity:</strong> Moderate–High</p>
-				<p>Get moving with a fun combination of dance routines and cardio exercises suitable for different fitness levels.</p>
-				<p><strong>Price:</strong> €12</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-		</div>
-
-		</div><div class="cards" data-category="Strength">
-			<div class="card-images">
-				<img src="Images/abstraining.jpg" alt="Yoga Class"/>
-			</div>
-			<div class="card-content">
-				 <h2>Abs Blast</h2>
-				<p><strong>Category:</strong> Strength</p>
-				<p><strong>Duration:</strong> 20 minutes</p>
-				<p><strong>Intensity:</strong> Moderate–High</p>
-				<p>Focus on your core with a targeted workout designed to strengthen your abdominal muscles.</p>
-				<p><strong>Price:</strong> €8</p>
-				<p><strong>Add to Favorites:</strong> <i class="fa-regular fa-heart favourite-icon"></i></p>
-			</div>
-		</div>
-	</div>
-
-
+      <div class="cards" data-category="HIIT">
+        <div class="card-images">
+          <img
+            src="Images/crosstraining.jpg"
+            alt="A man performing exercise on a stationary bike"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Cross Training</h2>
+          <p><strong>Category:</strong> Full Body</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> High</p>
+          <p>
+            Combine different training styles to improve overall strength,
+            endurance and athletic performance.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
+      <div class="cards" data-category="Dance">
+        <div class="card-images">
+          <img
+            src="Images/DANCEFITNESS.jpg"
+            alt="A man performing a breakdancing pose"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Dance Fitness</h2>
+          <p><strong>Category:</strong> Dance Fitness</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Intensity:</strong> Moderate–High</p>
+          <p>
+            Get moving with a fun combination of dance routines and cardio
+            exercises suitable for different fitness levels.
+          </p>
+          <p><strong>Price:</strong> €12</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
+      <div class="cards" data-category="Strength">
+        <div class="card-images">
+          <img
+            src="Images/abstraining.jpg"
+            alt="A woman performing bicycle crunches"
+          />
+        </div>
+        <div class="card-content">
+          <h2>Abs Blast</h2>
+          <p><strong>Category:</strong> Strength</p>
+          <p><strong>Duration:</strong> 20 minutes</p>
+          <p><strong>Intensity:</strong> Moderate–High</p>
+          <p>
+            Focus on your core with a targeted workout designed to strengthen
+            your abdominal muscles.
+          </p>
+          <p><strong>Price:</strong> €8</p>
+          <p>
+            <strong>Add to Favorites:</strong>
+            <i class="fa-regular fa-heart favourite-icon"></i>
+          </p>
+        </div>
+      </div>
+    </div>
 
     <footer class="gym-footer">
-		<div class="footer-content">
-			<div class="footer-section">
-				<h3>Infinity Gym</h3>
-				<p>Your fitness journery begins here</p>
-			</div>
-			<div class="footer-section">
-				<h3>Contact Us</h3>
-				<p>Email: info@infinitygym.ie</p>
-				<p>Phone: 087 123 4567</p>
-			</div>
-			<div class="footer-section">
-				<h3>Opening Hours</h3>
-				<p>Monday - Friday: 6am to 11pm</p>
-				<p>Saturday and Sunday: 8am to 8pm</p>
-			</div>
-		</div>
-		<div class="footer-bottom"> <!-- code reference: https://www.w3schools.com/html/html_entities.asp -->
-			<p>&copy; 2026 Infinity Gym . All rights reserved.</p>
-		</div>
-	</footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Infinity Gym</h3>
+          <p>Your fitness journery begins here</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@infinitygym.ie</p>
+          <p>Phone: 087 123 4567</p>
+        </div>
+        <div class="footer-section">
+          <h3>Opening Hours</h3>
+          <p>Monday - Friday: 6am to 11pm</p>
+          <p>Saturday and Sunday: 8am to 8pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <!-- code reference: https://www.w3schools.com/html/html_entities.asp -->
+        <p>&copy; 2026 Infinity Gym . All rights reserved.</p>
+      </div>
+    </footer>
     <script src="js/classes.js"></script>
-	
-</body>
+  </body>
 </html>
