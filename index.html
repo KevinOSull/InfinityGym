@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    /> -->
+    />
     <!-- //Disabled for now as it is stopping the image carousel from displaying -->
     <!-- properly. Will troubleshoot -->
     <link rel="stylesheet" href="css/index.css" />
@@ -26,8 +26,11 @@
         <a href="booking.html">Contact</a>
       </nav>
     </header>
-    <h2>Infinity Gym</h2>
-
+    <div id="heroBanner">
+      <div id="heroText">
+        <p>Infinity Gym</p>
+      </div>
+    </div>
     <div id="aboutYou">
       <h3>About You</h3>
       <p>
@@ -72,8 +75,8 @@
       <!-- Slideshow container -->
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 6</div>
+        <div class="mySlides slideFade">
+          <div class="numberText">1 / 6</div>
           <img
             src="./Images/gym.jpg"
             alt="A wide shot of a gym floor with equipment"
@@ -82,8 +85,8 @@
           <div class="text">Caption Text</div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 6</div>
+        <div class="mySlides slideFade">
+          <div class="numberText">2 / 6</div>
           <img
             src="./Images/dumbells.jpg"
             alt="An image of a dumbell rack"
@@ -92,8 +95,8 @@
           <div class="text">Caption Two</div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 6</div>
+        <div class="mySlides slideFade">
+          <div class="numberText">3 / 6</div>
           <img
             src="./Images/machines1.jpg"
             alt="A variety of gym machine equipment"
@@ -102,8 +105,8 @@
           <div class="text">Caption Three</div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 6</div>
+        <div class="mySlides slideFade">
+          <div class="numberText">4 / 6</div>
           <img
             src="./Images/machines2.jpg"
             alt="A variety of gym machine equipment"
@@ -112,8 +115,8 @@
           <div class="text">Caption Three</div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 6</div>
+        <div class="mySlides slideFade">
+          <div class="numberText">5 / 6</div>
           <img
             src="./Images/machines3.jpg"
             alt="A variety of gym machine equipment"
@@ -122,8 +125,8 @@
           <div class="text">Caption Three</div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">6 / 6</div>
+        <div class="mySlides slideFade">
+          <div class="numberText">6 / 6</div>
           <img
             src="./Images/medicineball.jpg"
             alt="A rack of kettlebells and medicine balls"
@@ -132,8 +135,8 @@
           <div class="text">Caption Three</div>
         </div>
         <!-- 
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
+        <div id="mySlides slideFade">
+          <div class="numberText">3 / 3</div>
           <img src="./Images/machines1.jpg" style="width: 100%" />
           <div class="text">Caption Three</div>
         </div> -->
@@ -146,12 +149,12 @@
 
       <!-- The dots/circles -->
       <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="slidesDot" onclick="currentSlide(1)"></span>
+        <span class="slidesDot" onclick="currentSlide(2)"></span>
+        <span class="slidesDot" onclick="currentSlide(3)"></span>
+        <span class="slidesDot" onclick="currentSlide(4)"></span>
+        <span class="slidesDot" onclick="currentSlide(5)"></span>
+        <span class="slidesDot" onclick="currentSlide(6)"></span>
       </div>
     </div>
     <div id="ourClasses">
@@ -161,7 +164,7 @@
         personal training sessions
       </p>
       <div id="classesList">
-        <div class="classListItem">
+        <div class="classListItem" id="strengthList">
           <h3>Strength</h3>
           <ul>
             <li>Olympic Lifting Classes</li>
@@ -172,21 +175,18 @@
           </ul>
         </div>
 
-        <div class="classListItem">
+        <div class="classListItem" id="enduranceList">
           <h3>Endurance</h3>
           <ul>
             <li>Boxercise</li>
             <li>Circuit Training</li>
-            <li>Dance Fitness</li>
-            <li>HIIT Training</li>
+            <li>Dance Fitness Classes</li>
+            <li>HIIT Training Classes</li>
             <li>Spinning Class</li>
           </ul>
-
-          <br />
-          <br />
         </div>
 
-        <div class="classListItem">
+        <div class="classListItem" id="flexibilityList">
           <h3>Flexibility</h3>
           <ul>
             <li>Yoga Classes</li>
@@ -195,9 +195,6 @@
             <li>Pilates</li>
             <li>Tai Chi Lessons</li>
           </ul>
-
-          <br />
-          <br />
         </div>
       </div>
       <p>
