@@ -2,13 +2,17 @@
 #aboutUs,
 #ourClasses {
   text-align: center;
-  border-style: dashed;
+  /* border-style: dashed; */
   margin: 1vw;
 }
 
 h3 {
   font-weight: bolder;
   color: #174b38;
+}
+
+p {
+  font-size: large;
 }
 
 #heroBanner {
@@ -27,7 +31,7 @@ h3 {
 #heroText {
   background-color: rgba(221, 218, 218, 0.4);
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 15rem;
   color: red;
   text-decoration: solid;
   text-shadow:
@@ -134,9 +138,9 @@ h3 {
 }
 
 ul {
-  border-style: dashed;
+  /* border-style: dashed; */
   list-style: none;
-  border-color: purple;
+  /*border-color: purple; */
   background-color: rgba(221, 218, 218, 0.6);
   color: black;
   font-weight: bold;
@@ -144,35 +148,39 @@ ul {
   text-decoration: none;
   align-self: center;
   margin: 5px;
-  padding: 0;
+  padding: 2px;
   font-weight: lighter;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 
 #classesList {
-  border-style: dashed;
-  border-color: blue;
+  /* border-style: dashed;
+  border-color: blue; */
   display: flex;
   flex-wrap: wrap;
+  /* background-color: rgba(221, 218, 218, 0.6); */
+  flex: 1 1 25%;
   /* align-items: normal; */
-  justify-content: center;
-  gap: 1vw;
+  justify-content: space-evenly;
+  gap: 2vw;
+  border-radius: 5px;
 }
 
 .classListItem {
-  border-style: dashed;
-  border-color: red;
-  display: flex;
+  /* border-style: dashed;
+  border-color: red; */
+
+  background-color: rgba(221, 218, 218, 0.6);
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   /* max-width: 30vw; */
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 33%;
-  min-height: 50vw;
-  /* min-width: 25vw; */
+  flex: 0.1 1 33%;
+  /* min-height: 50vw; */
+  min-width: 300px;
+  border-radius: 5px;
   /* margin: 0px 2vw; */
 }
 
@@ -188,9 +196,20 @@ ul {
   background-image: url("../Images/yogaClass.jpg");
 }
 
+#otherList {
+  background-image: url("../Images/DANCEFITNESS.jpg");
+}
+
+.listTitle {
+  background-color: rgba(221, 218, 218, 0.6);
+  padding: 2px;
+  border-radius: 5px;
+}
+
 #strengthList,
 #enduranceList,
-#flexibilityList {
+#flexibilityList,
+#otherList {
   background-size: cover;
   background-position: center;
   display: flex;
