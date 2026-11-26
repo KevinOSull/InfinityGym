@@ -105,10 +105,10 @@
 .total-cost{
 	background-color: #174B38;
 	color: white;
-	padding: 6px 10px;
+	padding: 5px 8px;
 	border-radius: 8px;
-	margin: 10px auto 0;
-	max-width: 400px;
+	margin: 8px auto 0;
+	max-width: 350px;
 }
 .total-cost h3{
 	color: white;
