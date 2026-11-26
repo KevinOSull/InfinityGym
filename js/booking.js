@@ -1,20 +1,16 @@
 //create objects
 //code Reference: https://www.w3schools.com/js/js_project_form_validation.asp
-const nameInput = document.getElementById("firstName");
-const nameInput = document.getElementById("lastName");
+const firstNameInput = document.getElementById("firstName");
+const lastNameInput = document.getElementById("lastName");
 const emailInput = document.getElementById("email");
 const phoneInput = document.getElementById("phone");
-const dropdownInput = document.getElementById("membership");
-const messageInput = document.getElementById("message");
-const nameInput = document.getElementById("checkbox");
-const nameError = document.getElementById("firstNameError");
-const nameError = document.getElementById("lastNameError");
+const membershipInput = document.getElementById("membership");
+const firstNameError = document.getElementById("firstNameError");
+const lastNameError = document.getElementById("lastNameError");
 const emailError = document.getElementById("emailError");
 const phoneError = document.getElementById("phoneError");
-const dropdownError = document.getElementById("dropdownError");
-const messageError = document.getElementById("messageError");
-const nameError = document.getElementById("checkboxError");
-const form = document.getElementById("contactForm");
+const membershipError = document.getElementById("membershipError");
+const form = document.getElementById("joinForm");
 const result = document.getElementById("result");
 
 //display error
@@ -27,14 +23,25 @@ function clearError(errorId){
 	errorId.innerHTML = "";
 }
 
-//validate name
-function validateName(){
-	let value = nameInput.value.trim();
+//validate first name
+function validateFirstName(){
+	let value = firstNameInput.value.trim();
 	if (value.length < 2){
-		showError(nameError, "Please enter your full name.");
+		showError(firstNameError, "Please enter your first name.");
 		return false;
 	}
-	clearError(nameError);
+	clearError(firstNameError);
+	return true;
+}
+
+//validate last name
+function validateLastName(){
+	let value = lastNameInput.value.trim();
+	if (value.length < 2){
+		showError(lastNameError, "Please enter your last name.");
+		return false;
+	}
+	clearError(lastNameError);
 	return true;
 }
 
@@ -60,35 +67,24 @@ function validatePhone(){
 	return true;
 }
 
-//validate enquiry type
-function validateDropdown(){
-	if(dropdownInput.value === ""){
-		showError(dropdownError, "Please choose an enquiry type.");
+//validate membership
+function validateMembership(){
+	if(membershipInput.value === ""){
+		showError(membershipError, "Please choose a membership type.");
 		return false;
 	}
-	clearError(dropdownError);
-	return true;
-}
-
-//validate message
-function validateMessage(){
-	let value = messageInput.value.trim();
-	if(value.length < 20){
-		showError(messageError, "Your message must be at least 20 characters.");
-		return false;
-	}
-	clearError(messageError);
+	clearError(membershipError);
 	return true;
 }
 
 //validate form
 function validateForm(){
-	let okName = validateName();
+	let okFirstName = validateFirstName();
+	let okLastName = validateLastName();
 	let okEmail = validateEmail();
 	let okPhone = validatePhone();
-	let okDropdown = validateDropdown();
-	let okMessage = validateMessage();
-	return okName && okEmail && okPhone && okDropdown && okMessage;
+	let okMembership = validateMembership();
+	return okFirstName && okLastName && okEmail && okPhone && okMembership;
 }
 
 //prevent reloading
@@ -97,16 +93,17 @@ form.addEventListener("submit", function(event){
 
 	//clear result
 	result.innerHTML = "";
+	result.className= "";
 	
 	//validate form
 	if (validateForm()){
-		result.innerHTML = "Thank you! Your query has been submitted.";
-		result.className = "ok";
+		result.innerHTML = "Thank you for your enquiry! Our team will be in touch soon.";
+		result.className = "valid"; 
 		form.reset();
 	} 
 	else{
 		result.innerHTML = "Please fix the errors above.";
-		result.className = "error";
+		result.className = "invalid";
 	}
 });
 
