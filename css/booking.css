@@ -1,11 +1,11 @@
 .intro{
 	text-align: center;
 	padding: 50px 20px;
-	background-color: #F4F4F4;
+	background-color: #F4F4F4; /* https://www.w3schools.com/css/css_colors_hex.asp */
 	color: #174B38;
 }
 .intro h1{
-	font-size: 2.5rem;
+	font-size: 2.5rem; /* code reference: https://www.w3schools.com/css/css_font_size.asp */
 	margin-bottom: 15px;
 }
 .intro p{
@@ -28,7 +28,7 @@
 .join-form form{
 	background-color: #F4F4F4;
 	padding: 30px;
-	border-radius: 8px;
+	border-radius: 8px; /* code reference: https://www.w3schools.com/css/css3_buttons.asp */
 }
 .join-form h2{
 	text-align: center;
@@ -58,12 +58,12 @@
 	height: auto;
 	font-size: 1.4rem;
 	background-color: white;
-	box-shadow: none;
+	box-shadow: none; /* code reference: https://www.w3schools.com/css/css3_shadows_box.asp */
 }
 .join-form .form-control:focus{ /* code reference: https://www.w3schools.com/bootstrap/bootstrap_forms.asp?utm_source=chatgpt.com */
 	border-color: #174B38;
 	outline: none;
-	box-shadow: 0 0 5px rgba(23, 75, 56, 0.3);
+	box-shadow: 0 0 5px rgba(23, 75, 56, 0.3); /* code reference: https://www.w3schools.com/colors/colors_rgb.asp */
 }
 .join-form .btn-success{
 	background-color: #174B38;
