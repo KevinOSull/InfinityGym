@@ -103,3 +103,36 @@ h2 {
     opacity: 1;
   }
 }
+
+ul {
+  border-style: dashed;
+  list-style: none;
+  border-color: purple;
+  text-decoration: none;
+  align-self: center;
+  margin: 5px;
+  padding: 0;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+}
+
+#classesList {
+  border-style: dashed;
+  border-color: blue;
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+}
+
+.classListItem {
+  border-style: dashed;
+  border-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 30vw; */
+  min-width: 25vw;
+  margin: 0px 2vw;
+}
